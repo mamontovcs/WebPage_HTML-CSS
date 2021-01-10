@@ -13,13 +13,19 @@ body {
     box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
 }
 
 p {
     margin: 0 0 10px 0;
 }
+
 
 /*Container
 ======================*/
@@ -29,6 +35,7 @@ p {
     max-width: 1170px;
     margin: 0 auto;
 }
+
 
 /*Nav
 ======================*/
@@ -56,6 +63,7 @@ p {
     opacity: 1;
 }
 
+
 /*Header
 ======================*/
 
@@ -76,8 +84,10 @@ p {
     align-items: center;
 }
 
+
 /*Intro
 ======================*/
+
 .intro {
     display: flex;
     flex-direction: column;
@@ -112,6 +122,7 @@ p {
     margin-bottom: 60px;
 }
 
+
 /*Button
 ======================*/
 
@@ -138,4 +149,98 @@ p {
 
 .btn--red:hover {
     background-color: #ff2b04;
+}
+
+
+/*Features
+======================*/
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px 0;
+}
+
+.features_item {
+    width: 33.333333%;
+    text-align: center;
+    padding: 0 40px;
+    margin: 25px 0;
+}
+
+.features_icon {
+    margin-bottom: 25px;
+}
+
+.features_title {
+    font-size: 14px;
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.features_text {
+    font-size: 14px;
+    color: #6c7279;
+    line-height: 1.5;
+}
+
+
+/*Works
+======================*/
+
+.works {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.works_item {
+    width: 25%;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.works_item:hover .works_content {
+    opacity: 1;
+}
+
+.works_photo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.works_content {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(232, 69, 69, 0.9);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    transition: opacity 0.2s linear;
+}
+
+.works_title {
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.works_text {
+    font-size: 14px;
+    color: #fff;
 }
