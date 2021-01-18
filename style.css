@@ -140,12 +140,17 @@ p {
     font-family: 'Raleway', sans-serif;
     padding: 14px 40px;
     border-radius: 3px;
+    text-align: center;
 }
 
 .btn--red {
     background-color: red;
     opacity: 1;
     transition: background .1s linear;
+}
+
+.btn--long {
+    min-width: 280px;
 }
 
 .btn--red:hover {
@@ -303,6 +308,26 @@ p {
     display: flex;
 }
 
+.social--footer {
+    justify-content: center;
+
+}
+
+.social--footer .social_item {
+    background-color: transparent;
+    border-width: 2px;
+    border-color: #ffffff;
+    border-radius: 2px;
+}
+
+.social--footer .social_item:hover {
+    background-color: #ffffff;
+}
+
+.social--footer .social_icon {
+    fill: #ffffff;
+}
+
 .social_item {
 
     display: flex;
@@ -330,7 +355,7 @@ p {
 }
 
 .social_item:hover .social_icon {
-    fill: red;
+    fill: black;
 }
 
 /*Reviews
@@ -383,3 +408,90 @@ p {
     text-transform: uppercase;
     color: #fff;
 }
+
+/*Download
+======================*/
+
+.download {
+    margin: 90px 0;
+    text-align: center;
+}
+
+.download_title {
+    margin-bottom: 10px;
+
+    font-size: 28px;
+    color: #2d3033;
+    font-weight: 300;
+}
+
+.download_text {
+    margin-bottom: 30px;
+
+    font-size: 13px;
+    color: #2d3033;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/*Footer
+======================*/
+
+.footer {
+    background-color: #3a3e64;
+}
+
+.footer_inner {
+    padding: 70px 0;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer_block {
+    padding: 0 15px;
+
+    width: 33.33333%;
+    text-align: center;
+}
+
+.footer_title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.footer_address {
+    line-height: 1.5;
+    font-size: 14px;
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer_text {
+    line-height: 1.5;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/*Copyright
+======================*/
+.copyright {
+    padding: 20px 0;
+    background-color: #313354;
+}
+
+.copyright_text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #808080;
+}
+
+.copyright_text span {
+    color: #ffffff;
+}
+
+
