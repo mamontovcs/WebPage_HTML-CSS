@@ -423,6 +423,56 @@ p {
     color: #fff;
 }
 
+.reviews__slider {
+    height: 500px;
+    overflow: hidden;
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0 0 10px;
+    list-style: none;
+    width: 50%;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.slick-dots li {
+    margin: 0 5px;
+}
+
+.slick-dots button {
+    width: 20px;
+    height: 20px;
+
+    background: #fff;
+    border-radius: 50%;
+    border: 0;
+    opacity: 0.5;
+    padding: 0;
+    cursor: pointer;
+
+    font-size: 0;
+    color: transparent;
+}
+
+.slick-dots .slick-active button {
+    opacity: 1;
+}
+
+.slick-dots button:focus {
+    outline: 0;
+}
+
+.reviews__slider.slick-initialized {
+    height: auto;
+}
+
 /*Download
 ======================*/
 
@@ -571,6 +621,21 @@ p {
 
     .nav {
         display: none;
+        width: 100%;
+        text-align: right;
+        flex-direction: column;
+        position: absolute;
+        background-color: #31344e;
+        top: 100%;
+        right: 0;
+    }
+
+    .nav.show {
+        display: flex;
+    }
+
+    .nav__link {
+        padding: 9px 15px;
     }
 
     .intro__title {

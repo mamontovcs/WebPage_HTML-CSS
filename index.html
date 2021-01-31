@@ -9,6 +9,7 @@
     <link href="https://fonts.gstatic.com" rel="preconnect">
     <link href="style.css" rel="stylesheet">
     <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet" type="text/css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Active Box</title>
 </head>
@@ -41,15 +42,15 @@
             <div class="header__logo">
                 <img alt="" src="images/ActiveBox_logo.png">
             </div>
-            <nav class="nav">
-                <a class="nav__link" href="#" data-scroll="#features">Features</a>
-                <a class="nav__link" href="#" data-scroll="#works">Works</a>
-                <a class="nav__link" href="#" data-scroll="#team">Our team</a>
-                <a class="nav__link" href="#" data-scroll="#reviews">Testimonials</a>
-                <a class="nav__link" href="#" data-scroll="#download">Download</a>
+            <nav class="nav" id="nav">
+                <a class="nav__link" data-scroll="#features" href="#">Features</a>
+                <a class="nav__link" data-scroll="#works" href="#">Works</a>
+                <a class="nav__link" data-scroll="#team" href="#">Our team</a>
+                <a class="nav__link" data-scroll="#reviews" href="#">Testimonials</a>
+                <a class="nav__link" data-scroll="#download" href="#">Download</a>
             </nav>
 
-            <button class="burger" type="button">
+            <button class="burger" id="navToggle" type="button">
                 <span class="burger__item">Menu</span>
             </button>
 
@@ -218,7 +219,6 @@
     </div>
 </div>
 
-
 <div class="team" id="team">
     <div class="container">
         <div class="team_inner">
@@ -344,21 +344,43 @@
 
 <div class="reviews" id="reviews">
     <div class="container">
-        <div class="reviews_item">
-            <div class="reviews_photo">
-                <img alt="" class="reviews_image" src="images/reviews/woman.png">
-            </div>
-            <div class="reviews_content">
-                <div class="reviews_text">
-                    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur blanditiis
-                    consequatur cumque dolorem..."
+        <div class="reviews__slider" id="reviewsSlider">
+            <div>
+                <div class="reviews_item">
+                    <div class="reviews_photo">
+                        <img alt="" class="reviews_image" src="images/reviews/woman.png">
+                    </div>
+                    <div class="reviews_content">
+                        <div class="reviews_text">
+                            "Item 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur blanditiis
+                            consequatur cumque dolorem..."
+                        </div>
+                        <div class="reviews_author">
+                            Lorem ipsum dolor sit amet
+                        </div>
+                    </div>
                 </div>
-                <div class="reviews_author">
-                    Lorem ipsum dolor sit amet
+            </div>
+            <div>
+                <div class="reviews_item">
+                    <div class="reviews_photo">
+                        <img alt="" class="reviews_image" src="images/reviews/woman.png">
+                    </div>
+                    <div class="reviews_content">
+                        <div class="reviews_text">
+                            "Item 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur blanditiis
+                            consequatur cumque dolorem..."
+                        </div>
+                        <div class="reviews_author">
+                            Lorem ipsum dolor sit amet
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
     </div>
+</div>
 </div>
 
 <div class="download" id="download">
@@ -424,6 +446,7 @@
     </div>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="app.js"></script>
 
 </body>
